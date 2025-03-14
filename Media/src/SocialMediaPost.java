@@ -14,9 +14,7 @@ public class SocialMediaPost extends Digital{
     public void post(String platform){
         if(!isPosted) {
             isPosted = true;
-            setPostDate(LocalDate.now());
-            setPlatform(platform);
-            System.out.println(getTitle() + " was posted on " + getPlatform() + " by " + getAuthor() + " on " + getPostDate());
+            super.post(platform);
         } else {
             System.out.println("This has already been posted");
         }
@@ -25,7 +23,7 @@ public class SocialMediaPost extends Digital{
     public void view(int views){
         if(isPosted){
             this.viewCount += views;
-            System.out.println(this.getTitle() + " now has " + this.viewCount + " views");
+            System.out.println(getTitle() + " now has " + this.viewCount + " views");
         } else {
             System.out.println("This video must be posted before it can be viewed");
         }
@@ -35,6 +33,7 @@ public class SocialMediaPost extends Digital{
         if(isPosted){
             isPosted = false;
             this.viewCount = 0;
+            System.out.println(getTitle() + " has been deleted.");
         } else {
             System.out.println("This video must be posted before it can be deleted");
         }

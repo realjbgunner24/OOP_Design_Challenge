@@ -11,6 +11,11 @@ public class Digital extends Media implements Downloadable {
         this.postDate = postDate;
     }
 
+    public Digital(String title, String author, double fileSize) {
+        super(title, author);
+        this.fileSize = fileSize;
+    }
+
     /**
      * Implementation of the download method from the Downloadable interface.
      * This shows interface implementation.

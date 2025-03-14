@@ -13,7 +13,7 @@
   3. **Encapsulation:**
      - `title` and `author` are private fields, with public getter methods for controlled access.
   4. **Polymorphism:** 
-     - `SocialMediaPost` overrides the method post originally from the `Digital` Class. `Book` Overrides the method publish originally from the `Print` class
+     - `SocialMediaPost` overrides the method post originally from the `Digital` Class. `Book` Overrides the method publish originally from the `Print` class.
   5. **Coupling (Data and Stamp Coupling):** 
      - **Data Coupling:** `setFileSize()` in the `Digital` class takes a primitive double value.
      - **Stamp Coupling:** `convertPrintToDigital()` in the `MediaConverter` class takes a `Print` object.
