@@ -1,8 +1,8 @@
 public abstract class Media {
-    private String author;
-    private String title;
+    protected String author;
+    protected String title;
 
-    public Media(String title, String author){
+    public Media(String author, String title){
         this.author = author;
         this.title = title;
     }
