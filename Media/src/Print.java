@@ -1,7 +1,7 @@
 import java.time.LocalDate; 
 
 public class Print extends Media {
-    protected LocalDate publishDate;
+    private LocalDate publishDate;
 
     public Print(String author, String title) {
         super(author, title);
@@ -10,6 +10,10 @@ public class Print extends Media {
     public void publish() {
         this.publishDate = LocalDate.now();
         System.out.println(getTitle() + " was published on " + this.publishDate + " by " + getAuthor());
+    }
+
+    public void setPublishDate(LocalDate publishDate) {
+        this.publishDate = publishDate;
     }
 
     public LocalDate getPublishDate() {
