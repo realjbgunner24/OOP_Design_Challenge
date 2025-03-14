@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Print HarryPotter = new Print("R.L Stines","HarryPotter");
-        Digital DailyNews = new Digital("David A", "Why are eggs so expensive");
+        Digital DailyNews = new Digital("David A", "Why are eggs so expensive", 20);
         HarryPotter.Publish();
         DailyNews.Post("NBC");
     }

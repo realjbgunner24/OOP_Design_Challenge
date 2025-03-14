@@ -17,11 +17,11 @@ public class Digital extends Media implements Downloadable {
     public void download() {
         System.out.println("Downloading " + getTitle() + " (" + fileSize + "MB)...");
     }
-    
+
     public void Post(String platform){
         this.postDate = LocalDate.now();
         this.platform = platform;
-        System.out.println(this.title+" was posted on "+this.platform+" by "+this.author+" on "+this.postDate);
+        System.out.println(this.title + " was posted on " + this.platform + " by " + this.author + " on " + this.postDate);
     }
 
     public void setFileSize(double fileSize) {
