@@ -1,7 +1,7 @@
 import java.time.LocalDate; 
 
 public class Print extends Media {
-    private LocalDate publishDate;
+    protected LocalDate publishDate;
 
     public Print(String author, String title) {
         super(author, title);

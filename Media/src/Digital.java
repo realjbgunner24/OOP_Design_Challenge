@@ -1,8 +1,8 @@
 import java.time.LocalDate; 
 public class Digital extends Media implements Downloadable {
     private double fileSize; // Size of the digital media file in MB
-    private String platform;
-    private LocalDate postDate;
+    protected String platform;
+    protected LocalDate postDate;
 
     public Digital(String title, String author, double fileSize) {
         super(title, author);
