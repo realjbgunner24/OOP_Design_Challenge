@@ -7,7 +7,7 @@ public class Print extends Media{
         super(author, title);
     }
 
-    public void Publish(){
+    public void publish(){
         this.publishDate = LocalDate.now();
         System.out.println(this.title + " was published on " + this.publishDate + " by " + this.author);
     }
