@@ -15,6 +15,6 @@
   4. **Polymorphism:** 
      - 
   5. **Coupling (Data and Stamp Coupling):** 
-     - **Data Coupling:** `Print`
-     - **Stamp Coupling:** `Print`
+     - **Data Coupling:** `setFileSize()` in the `Digital` class takes a primitive double value.
+     - **Stamp Coupling:** `convertPrintToDigital()` in the `MediaConverter` class takes a `Print` object.
 

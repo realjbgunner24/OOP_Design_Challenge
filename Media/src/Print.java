@@ -1,4 +1,4 @@
-import java.time.LocalDate; // import the LocalDate class
+import java.time.LocalDate; 
 
 public class Print extends Media {
     private LocalDate publishDate;
