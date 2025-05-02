@@ -12,8 +12,7 @@ public class Digital extends Media implements Downloadable {
     }
 
     public Digital(String title, String author, double fileSize) {
-        super(title, author);
-        this.fileSize = fileSize;
+        this(title, author, fileSize, null, null); // #1 change
     }
 
     /**
@@ -31,7 +30,10 @@ public class Digital extends Media implements Downloadable {
         System.out.println(getTitle() + " was posted on " + this.platform + " by " + getAuthor() + " on " + this.postDate);
     }
 
-    public void setFileSize(double fileSize) {
+    public void setFileSize(double fileSize) { // #2 change
+        if (fileSize < 0) {
+            throw new IllegalArgumentException("File size cannot be negative.");
+        }
         this.fileSize = fileSize;
     }
 
