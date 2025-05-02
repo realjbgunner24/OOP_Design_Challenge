@@ -20,7 +20,7 @@ public class SocialMediaPost extends Digital{
         }
     }
 
-    public void view(int views){
+    public void addViews(int views){ // #1 change
         if(isPosted){
             this.viewCount += views;
             System.out.println(getTitle() + " now has " + this.viewCount + " views");
